@@ -89,4 +89,6 @@ type Player = {
   name: string;
   team: string;
 };
+
 type AddGoals = (players: Player) => Player & { goals: number };
+type PlayersWithGoals = ReturnType<AddGoals>;
