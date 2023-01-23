@@ -19,11 +19,9 @@ const injectPokemonTemplate = (pokemon: PokemonFromAPI): void => {
 
 <p>Tipo 1: ${pokemon.types[0].type.name}</p>
 
-
 ${pokemon.types[1] ? `<p>Tipo 2: ${pokemon.types[1].type.name}</p>` : ""}
 
 `;
-
   pokemonCard.innerHTML = template;
 };
 
